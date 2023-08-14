@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Размеры экрана</title>
+    <style>
+        .screen-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="screenButton" class="screen-button">Показать размеры экрана</button>
+
+    <script>
+        const screenButton = document.getElementById("screenButton");
+
+        screenButton.addEventListener("click", () => {
+            const screenWidth = window.innerWidth;
+            const screenHeight = window.innerHeight;
+
+            alert(`Размеры экрана: Ширина - ${screenWidth}px, Высота - ${screenHeight}px`);
+        });
+    </script>
+</body>
+</html>
